@@ -29,6 +29,8 @@ export default function Parent() {
       <Child1
         setFirst={(val) => setFirst(val)}
         setSecond={(val) => setSecond(val)}
+        first={first}
+        second={second}
         setOperation={(val) => {
           setOperation(val);
           setFinal(getFinal(val, first, second));
